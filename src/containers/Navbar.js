@@ -8,7 +8,7 @@ export default function Navbar() {
         M.Sidenav.init(sidenav, {});
     });
     const listItems = <React.Fragment>
-            <li><Link to='/resume' target="_blank" rel='noreferrer noopener'>Resume</Link></li>
+            <li><Link to='/wyatt-weisensel-resume.pdf' target="_blank" rel='noreferrer noopener'>Resume</Link></li>
             <li><a href="https://github.com/Genoe" target="_blank" rel='noreferrer noopener'>My GitHub</a></li>
         </React.Fragment>;
     return (
