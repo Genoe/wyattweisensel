@@ -31,11 +31,13 @@ img {
   }
 }
 
-@media only screen and (min-width: 993px) {
-  /* Center images vertically and add some left margin */
+@media only screen and (min-width: 993px) and (max-width: 1629px) {
+  /* Center images vertically and add some left margin
+   After a certain width, let the default materalize css take back over
+   with of the cards will max out since we are within a container to keep 
+   everyting centered on the page */
   .card .card-image img {
     margin: 0;
-    position: absolute;
     top: 50% !important;
     transform: translateY(-50%) !important;
     margin-left: 10px;
