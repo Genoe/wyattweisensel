@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom';
-import M from 'materialize-css/dist/js/materialize.min.js';
+import M from 'materialize-css';
 
 export default function Navbar() {
     useEffect(() => {
@@ -12,7 +12,7 @@ export default function Navbar() {
             <nav>
                 <div className="nav-wrapper container">
                     <Link to='/' className='brand-logo'>Wyatt Weisensel</Link>
-                    <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+                    <button data-target="slide-out" className="sidenav-trigger link-button hide-on-large-only"><i className="material-icons menu-icon">menu</i></button>
                     <ul className="right hide-on-med-and-down">
                         <li><Link to='/resume'>Resume</Link></li>
                         <li><a href="https://github.com/Genoe">My GitHub</a></li>
