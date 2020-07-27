@@ -30,3 +30,14 @@ img {
     position: relative !important;
   }
 }
+
+@media only screen and (min-width: 993px) {
+  /* Center images vertically and add some left margin */
+  .card .card-image img {
+    margin: 0;
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin-left: 10px;
+  }
+}
