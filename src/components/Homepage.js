@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard';
 
+const MOBILE_SIZE = 993;
+
 export default function Homepage() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 993);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < MOBILE_SIZE);
+
+    const checkIsMobile = () => {
+        setIsMobile(window.innerWidth < MOBILE_SIZE);
+    };
+
     useEffect(() => {
-        window.addEventListener('resize', () => {
-            setIsMobile(window.innerWidth < 993);
-        }, false);
-    })
+        window.addEventListener('resize', checkIsMobile, false);
+
+        return function cleanup() {
+            window.removeEventListener('resize', checkIsMobile, false);
+        };
+    });
 
     let projectCardData = [
         {
