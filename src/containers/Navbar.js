@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import {Link} from 'react-router-dom';
 import M from 'materialize-css';
 
 export default function Navbar() {
+    const slideOutRef = useRef(null);
+
     useEffect(() => {
-        let sidenav = document.querySelector('#slide-out');
+        let sidenav = slideOutRef.current;
         M.Sidenav.init(sidenav, {});
     });
     const listItems = <React.Fragment>
@@ -22,7 +24,7 @@ export default function Navbar() {
                     </ul>
                 </div>
             </nav>
-            <ul className="sidenav" id="slide-out">
+            <ul className="sidenav" id="slide-out" ref={slideOutRef}>
                 {listItems}
             </ul>
         </React.Fragment>
