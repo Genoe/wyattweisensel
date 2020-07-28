@@ -55,9 +55,9 @@ export default function Homepage() {
             <h1 className="center-align">Hi, I'm Wyatt Weisensel</h1>
             <p className="center-align">
                 A developer from Madison, Wisconsin. I enjoy creating web applications to save people time and money.
-                As a teenager, I started buiding computers as a hobby, which let to my first IT internship during my 
-                senior year of highschool. After that, I went to the University of Wisconsin-Platteville to persue
-                a degree in computer science. Now, I am a fullstack and backend developer who enjoys working with
+                As a teenager, I started building computers as a hobby, which led to my first IT internship during my 
+                senior year of high school. After that, I went to the University of Wisconsin-Platteville to pursue
+                a degree in computer science. Now, I am a full stack and backend developer who enjoys working with
                 JavaScript and .Net technologies. When I'm not coding away at something cool, I enjoy  
                 farming (dairy farm kid) and exploring new places (just got back from Japan).
                 Check out some of my projects listed below.
