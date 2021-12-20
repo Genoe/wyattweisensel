@@ -28,12 +28,6 @@ export default function Homepage() {
             url: 'https://wordcompleteonline.com/'
         },
         {
-            imgURL: './asiabazaar-logo.jpg',
-            header: 'Asia Bazaar',
-            description: `A "buy and sell" website I made for a client. People could email the owner and have an item with thier contact information listed.
-                        The website owner would log in to manage all listings. Made with Node, Express.js, EJS templates, and Bootstrap.`,
-        },
-        {
             imgURL: './github-screenshot.jpg',
             header: 'My GitHub',
             description: `Check out my GitHub portfolio to see what I have been up to in the world of software development.
@@ -44,7 +38,8 @@ export default function Homepage() {
             imgURL: './code-screenshot.jpg',
             header: 'This Website!',
             description: `My personal website, which you are looking at right now! Made with React and the Materialize CSS library. Hosted on AWS using
-            S3, Route53, Certificate Manager, and CloudFront.`
+            S3, Route53, Certificate Manager, and CloudFront.`,
+            url: 'https://github.com/Genoe/wyattweisensel'
         },
     ]
 
@@ -66,9 +61,9 @@ export default function Homepage() {
                 A developer from Madison, Wisconsin. I enjoy creating web applications to save people time and money.
                 As a teenager, I started building computers as a hobby, which led to my first IT internship during my 
                 senior year of high school. After that, I went to the University of Wisconsin-Platteville to pursue
-                a degree in computer science. Now, I am a full stack and backend developer who enjoys working with
-                JavaScript and .Net technologies. When I'm not coding away at something cool, I enjoy  
-                farming (dairy farm kid) and exploring new places (just got back from Japan).
+                a degree in computer science. Now, I am a full stack developer who enjoys working with
+                JavaScript, Java, and .Net technologies. When I'm not coding away at something cool, I enjoy  
+                farming (dairy farm kid) and exploring new places (been to Japan and Aruba so far).
                 Check out some of my projects listed below.
             </p>
             <div className="row">
